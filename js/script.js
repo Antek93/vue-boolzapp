@@ -10,7 +10,7 @@ createApp({
             activeIndex: 0,
             sofia : {
                 name: 'Sofia',
-                avatar: '_',
+                avatar: 'img/avatar_io.jpg',
                 visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',

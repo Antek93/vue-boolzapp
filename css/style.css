@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+/* Attributi per cursor pointer sui bottoni  */
+
+.cursor {
+    cursor: pointer;
+}
 /* Contenitore principale */
 
 #setContainer {
@@ -167,6 +172,24 @@
     justify-content: flex-start;
 }
 
+.sofiapic {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    
+}
+
+.sofianame {
+    margin-left: 15px;
+}
+
+.sofiapic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
 .myIcons {
     width: 50%;
     font-size: 30px;
@@ -209,11 +232,14 @@
 .bellTitle {
     font-size: 13px;
     font-weight:700;
+    cursor: pointer;
+   
 }
 
 .bellSubtitle {
     font-size: 10px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Lista messaggi chat */
@@ -317,7 +343,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: rgb(102, 101, 101);
+    color: rgb(102, 101, 101);   
     
 }
 
