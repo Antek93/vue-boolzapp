@@ -64,8 +64,88 @@ contacts: [
         ],
     },
     {
-        name: 'Luisa',
+        name: 'Alessandro B.',
         avatar: '_4',
+        visible: true,
+        messages: [{
+            date: '10/01/2020 15:30:55',
+            message: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+        },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Si, ma preferirei andare al cinema',
+                status: 'received'
+            }
+        ],
+    },
+    {
+        name: 'Alessandro L.',
+        avatar: '_5',
+        visible: true,
+        messages: [{
+            date: '10/01/2020 15:30:55',
+            message: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+        },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Si, ma preferirei andare al cinema',
+                status: 'received'
+            }
+        ],
+    },
+    {
+        name: 'Claudia',
+        avatar: '_6',
+        visible: true,
+        messages: [{
+            date: '10/01/2020 15:30:55',
+            message: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+        },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Si, ma preferirei andare al cinema',
+                status: 'received'
+            }
+        ],
+    },
+    {
+        name: 'Federico',
+        avatar: '_7',
+        visible: true,
+        messages: [{
+            date: '10/01/2020 15:30:55',
+            message: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+        },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Si, ma preferirei andare al cinema',
+                status: 'received'
+            }
+        ],
+    },
+    {
+        name: 'Davide',
+        avatar: '_8',
+        visible: true,
+        messages: [{
+            date: '10/01/2020 15:30:55',
+            message: 'Lo sai che ha aperto una nuova pizzeria?',
+            status: 'sent'
+        },
+            {
+                date: '10/01/2020 15:50:00',
+                message: 'Si, ma preferirei andare al cinema',
+                status: 'received'
+            }
+        ],
+    },
+    {
+        name: 'Sofia',
+        avatar: '_',
         visible: true,
         messages: [{
             date: '10/01/2020 15:30:55',
