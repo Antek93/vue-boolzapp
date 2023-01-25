@@ -7,10 +7,27 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            activeIndex: 0,
+            sofia : {
+                name: 'Sofia',
+                avatar: '_',
+                visible: true,
+                messages: [{
+                    date: '10/01/2020 15:30:55',
+                    message: 'Lo sai che ha aperto una nuova pizzeria?',
+                    status: 'sent'
+                },
+                    {
+                        date: '10/01/2020 15:50:00',
+                        message: 'Si, ma preferirei andare al cinema',
+                        status: 'received'
+                    }
+                ],
+            },
             contacts: [
                 {
                     name: 'Michele',
-                    avatar: '_1',
+                    avatar: 'img/avatar_1.jpg',
                     visible: true,
                     messages: [
                         {
@@ -32,9 +49,10 @@ createApp({
                 },
                 {
                     name: 'Fabio',
-                    avatar: '_2',
+                    avatar: 'img/avatar_2.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '20/03/2020 16:30:00',
                         message: 'Ciao come stai?',
                         status: 'sent'
@@ -53,9 +71,10 @@ createApp({
                 },
                 {
                     name: 'Samuele',
-                    avatar: '_3',
+                    avatar: 'img/avatar_3.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '28/03/2020 10:10:40',
                         message: 'La Marianna va in campagna',
                         status: 'received'
@@ -74,96 +93,85 @@ createApp({
                 },
                 {
                     name: 'Alessandro B.',
-                    avatar: '_4',
+                    avatar: 'img/avatar_4.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Si, ma preferirei andare a pescare',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     name: 'Alessandro L.',
-                    avatar: '_5',
+                    avatar: 'img/avatar_5.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Si, ma preferirei andare al cinese',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     name: 'Claudia',
-                    avatar: '_6',
+                    avatar: 'img/avatar_6.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Nooo! Dove??',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     name: 'Federico',
-                    avatar: '_7',
+                    avatar: 'img/avatar_7.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'No, andiamo?',
                             status: 'received'
                         }
                     ],
                 },
                 {
                     name: 'Davide',
-                    avatar: '_8',
+                    avatar: 'img/avatar_8.jpg',
                     visible: true,
-                    messages: [{
+                    messages: [
+                        {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
                         status: 'sent'
                     },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
-                            status: 'received'
-                        }
-                    ],
-                },
-                {
-                    name: 'Sofia',
-                    avatar: '_',
-                    visible: true,
-                    messages: [{
-                        date: '10/01/2020 15:30:55',
-                        message: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent'
-                    },
-                        {
-                            date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: "Vabe, tanto andiamo sempre alla stessa da 20 anni",
                             status: 'received'
                         }
                     ],
@@ -172,9 +180,7 @@ createApp({
         }
     },
     methods: {
-        functionExample: function () {
-            return  console.log('I am Vue and I am working properly');
-        },
+       
         
     }
 }).mount('#app');
