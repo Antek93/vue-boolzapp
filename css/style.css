@@ -6,14 +6,37 @@
     box-sizing: border-box;
 }
 
-.debug {
-    background-color: aquamarine;
+/* Contenitore principale */
+
+.container {
+    width: 100%;
+    height: 100%
+}
+
+/* Background della web application  */
+
+.container header {
+    width: 100%;
+    height: 15vh;
+    background-color: #08948c;
+}
+
+.container footer {
+    width: 100%;
+    height: 85vh;
+    background-color: #e0dcd4;
+}
+
+/* Core della web Application */
+
+.container main {
+    width: 80%;
+    height: 90%;
     position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
     top: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(20, 47, 84);
 
 }
+
