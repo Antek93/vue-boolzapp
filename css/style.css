@@ -298,7 +298,7 @@
     height: 10%;
     background-color: rgb(207, 200, 190);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -324,22 +324,22 @@
 /* Attributi per sendMenu */
 
 .emoji {
-    width: 5%;
+    width: 10%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .textBox {
-    width: 80%;
+    width: 75%;
     display: flex;
     color: gray;
     justify-content: center;
 }
 
 .microphone {
-    width: 5%;
+    width: 10%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .barraDue {
