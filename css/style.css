@@ -8,35 +8,119 @@
 
 /* Contenitore principale */
 
-.container {
-    width: 100%;
-    height: 100%
+#setContainer {
+    margin: 0;
+    padding: 0;
 }
 
 /* Background della web application  */
 
-.container header {
+.container-fluid header {
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     background-color: #08948c;
 }
 
-.container footer {
+.container-fluid footer {
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     background-color: #e0dcd4;
 }
 
 /* Core della web Application */
 
-.container main {
+.container-fluid main {
     width: 80%;
-    height: 90%;
+    height: 93%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgb(20, 47, 84);
+    display: flex;
+
+}
+
+/* Contacts and Messages container */
+
+.leftBox {
+    width: 35%;
+    height: 100%;
+    background-color: blue;
+}
+
+.rightBox  {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(0, 255, 98);
+
+}
+
+/* Attributi per sezione contatti - colonna sinistra */
+
+.user {
+    width: 100%;
+    height: 10%;
+    background-color: #f0e8f0;
+}
+
+.alerts {
+    width: 100%;
+    height: 10%;
+    background-color: #8edafc ;
+}
+
+.contacts {
+    width: 100%;
+    height: 80%;
+    background-color: #f8f8f8;
+}
+
+/* Attributi dentro contacts */
+
+.nav-container {
+    display: flex;
+    background-color: #e5dbdb;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Attributi dentro nav-container  */
+
+.lente {
+    width: 20%;
+    justify-content: center;
+}
+
+.barra {
+    width: 77%;
+    justify-content: flex-start;
+    border: 0px;
+    
+} 
+
+.nav {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid white;
+    background-color: white;
+    color: gray;
+    border-radius: 3px;
+
+}
+
+.navigator {
+    width: 90%;
+    height: 40px;
+    border: none;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.navigator:focus {
+    cursor: pointer;
+    border: 0px;
+    outline: none;
 
 }
 
