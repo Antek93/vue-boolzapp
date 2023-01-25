@@ -67,7 +67,7 @@
 .user {
     width: 100%;
     height: 10%;
-    background-color:rgb(207, 200, 190);
+    background-color:rgb(206, 204, 203);
     display: flex;
     border: 0px;
 }
@@ -90,7 +90,7 @@
 
 .nav-container {
     display: flex;
-    background-color: #e5dbdb;
+    background-color: rgb(206, 204, 203);
     display: flex;
     justify-content: flex-start;
 }
@@ -142,7 +142,7 @@
     width: 100%;
     height: 89%;
     overflow: auto;
-    background-color: #e5dbdb;
+    background-color: rgb(206, 204, 203);
 }
 
 .messageBox > ol {
@@ -158,7 +158,7 @@
     width: 100%;
     height: 80px;
     background-color: white;
-    border: 1px solid rgba(226, 226, 226, 0.945);
+    border: 1px solid rgb(206, 204, 203);
 }
 
 /* Attributi per sezione user del left box  */
@@ -261,7 +261,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(207, 200, 190);
+    background-color: rrgb(206, 204, 203);
 }
 
 .profilePic img {
@@ -297,7 +297,7 @@
 .friendUser {
     width: 100%;
     height: 10%;
-    background-color:  rgb(207, 200, 190);
+    background-color:  rgb(206, 204, 203);
     border-left: 1px solid rgb(125, 119, 119);
     display: flex;
 
@@ -316,13 +316,13 @@
     width: 100%;
     height: 10%;
     background-color: rgba(1, 1, 1, 0.101);
-    border: 1px solid white;
+    border: 0.5px solid white;
 }
 
 .sendMenu {
     width: 100%;
     height: 10%;
-    background-color: rgb(207, 200, 190);
+    background-color: rgb(206, 204, 203);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -343,7 +343,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: rgb(102, 101, 101);   
+    color:  rgb(102, 101, 101);  
     
 }
 
