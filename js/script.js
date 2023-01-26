@@ -199,8 +199,6 @@ createApp({
             status: 'sent'
         });
 
-        this.inputText = '',
-
         setTimeout(() => {
 
             this.activeIndex.messages.push({
@@ -209,7 +207,9 @@ createApp({
                 status: 'receive'
             });
 
-        }, 3000);
+        }, 1000);
+
+        this.inputText = '';
 
         }
      }, mounted(){
