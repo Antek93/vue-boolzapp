@@ -28,10 +28,10 @@
 
                          <!-- Sofia da prendere con i dati -->
                         <div class="meBox">
-                           <div class="sofiapic">
+                           <div class="profilePic">
                                 <img :src="sofia.avatar" alt="">
                            </div>
-                           <div class="sofianame">
+                           <div class="myName">
                              {{ sofia.name }}
                            </div>
                         </div>
@@ -122,7 +122,7 @@
                                 <li v-for="(element, index) in contacts" class="chatUtente">
 
                                     <!-- Scheda chat -->
-                                    <div class="chatFriend">
+                                    <div @click="changeIndex(index, name)" class="chatFriend">
 
                                         <!-- immagine amico  -->
                                         <div class="iconFriend">
@@ -165,7 +165,25 @@
 
                         <!-- Amico con cui sto chattando  -->
                         <div class="activeFriend">
-                            <!-- Riempire con i dati di js  -->
+
+                            <!-- Immagine amico con cui sto chattando  -->
+                            <div class="profilePic">
+
+                                <img src="img/avatar_1.jpg" alt="">
+
+                            </div>
+
+                            <!-- Nome amico con cui sto chattando + ultimo accesso  -->
+                            
+                            <div class="ms-3">
+                                <div class="nameFriend">
+                                    Michele
+                                </div>
+                                <div class="lastAccess">
+                                    <span>Ultimo accesso alle</span><span>12:00</span>
+                                </div>
+                                
+                            </div>
                         </div>
                         
                         <!-- Icone su utente attivo -->
