@@ -7,6 +7,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            inputText: '',
             activeIndex: '',
             sofia : {
                 name: 'Sofia',
@@ -180,7 +181,7 @@ createApp({
         }
     },
     methods: {
-        
+
         changeIndex: function(index) {
 
             console.log('hai cliccato la scheda di', this.contacts[index].name)
@@ -188,9 +189,15 @@ createApp({
             console.log('Indice Attivo', this.activeIndex)
 
         },
+        addText: function() {
+        
+        console.log('Input text:', this.inputText)    
+
+        }
      }, mounted(){
 
         this.activeIndex = this.contacts[0];
         }
 
 }).mount('#app');
+
