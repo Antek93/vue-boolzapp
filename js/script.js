@@ -180,7 +180,9 @@ createApp({
         }
     },
     methods: {
-       
-        
+        changeIndex: function(index, name) {
+
+            console.log('hai cliccato la scheda di', this.contacts[index].name )
+        },
     }
 }).mount('#app');
