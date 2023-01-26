@@ -122,7 +122,7 @@
                                 <li v-for="(element, index) in contacts" class="chatUtente">
 
                                     <!-- Scheda chat -->
-                                    <div @click="changeIndex(index, name)" class="chatFriend">
+                                    <div @click="changeIndex(index)" class="chatFriend">
 
                                         <!-- immagine amico  -->
                                         <div class="iconFriend">
@@ -148,7 +148,7 @@
                                         <!-- Orario  -->
                                         <div class="hour">
                                             <div>
-                                                12:00
+                                              12:00  <!-- {{ contacts[index].messages[contacts[index].messages.length - 1].date[] }} -->
                                             </div>
                                         </div>
                                     </div>
@@ -169,21 +169,21 @@
                             <!-- Immagine amico con cui sto chattando  -->
                             <div class="profilePic">
 
-                                <img src="img/avatar_1.jpg" alt="">
+                                <img :src="this.activeIndex.avatar" alt="">
 
                             </div>
 
                             <!-- Nome amico con cui sto chattando + ultimo accesso  -->
-                            
                             <div class="ms-3">
+
                                 <div class="nameFriend">
-                                    Michele
+                                    {{ this.activeIndex.name }} 
                                 </div>
                                 <div class="lastAccess">
                                     <span>Ultimo accesso alle</span><span>12:00</span>
                                 </div>
-                                
                             </div>
+
                         </div>
                         
                         <!-- Icone su utente attivo -->
@@ -212,15 +212,16 @@
                         </div>
 
                     </div>
+                    <!-- Messages -->
+
                     <div class="display">
 
-                        <!-- Messages -->
-                        <div v-for="n in 30" class="messages">
+                        <div class="messages sent">
+                                ciao
+                        </div>
 
-                            <div>
-
-                            </div>
-
+                        <div class="messages receive">
+                                ciao
                         </div>
 
                     </div>

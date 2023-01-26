@@ -180,9 +180,13 @@ createApp({
         }
     },
     methods: {
-        changeIndex: function(index, name) {
+        changeIndex: function(index) {
 
-            console.log('hai cliccato la scheda di', this.contacts[index].name )
+            console.log('hai cliccato la scheda di', this.contacts[index].name)
+            this.activeIndex = this.contacts[index]
+            console.log('Indice Attivo', this.activeIndex)
+
+
         },
-    }
+     },
 }).mount('#app');
