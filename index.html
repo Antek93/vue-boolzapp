@@ -122,7 +122,7 @@
                                 <li v-for="(element, index) in contacts" class="chatUtente">
 
                                     <!-- Scheda chat -->
-                                    <div @click="changeIndex(index)" class="chatFriend">
+                                    <div @click="changeIndex(index, message)" class="chatFriend">
 
                                         <!-- immagine amico  -->
                                         <div class="iconFriend">
@@ -212,16 +212,47 @@
                         </div>
 
                     </div>
+
                     <!-- Messages -->
 
+                    <!-- Spazio dei messaggi  -->
                     <div class="display">
 
+                        <!-- Classe messaggi inviati  -->
+
                         <div class="messages sent">
-                                ciao
+
+                            <div class="testoEorario">
+                                <div class="textFormat">
+                                    {{ this.activeIndex.messages}} 
+                                </div>
+                                <div class="timeText">
+                                    12:00
+                                </div>
+                            </div>
+
                         </div>
 
+                        <!-- Classe messaggi ricevuti  -->
+
                         <div class="messages receive">
-                                ciao
+
+                            <div class="testoEorario">
+
+                                <!-- Testo messaggi  -->
+                                <div class="textFormat">
+
+                                    {{ this.activeIndex.messages }}
+
+                                </div>
+                                
+                                <!-- Orario messaggi  -->
+                                <div class="timeText">
+                                    12:00
+                                </div>
+
+                            </div>
+                           
                         </div>
 
                     </div>
