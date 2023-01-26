@@ -220,39 +220,28 @@
 
                         <!-- Classe messaggi inviati  -->
 
-                        <div class="messages sent">
+                        <!-- Prendi gli oggetti contenuti in messages  -->
+                        <!-- Aggiungi la classe messages a tutti gli elementi che verrano creati -->
+                        <!-- Aggiungi la classe sent se lo status è sent, altrimenti aggiungi la classe received -->
+
+                        <div v-for="(oggetto, index) in activeIndex.messages"
+                        class="messages" 
+                        :class="(oggetto.status=='sent') ? 'sent' : 'receive'">
 
                             <div class="testoEorario">
                                 <div class="textFormat">
-                                    {{ this.activeIndex.messages}} 
+
+                                    <!-- Dell'oggetto estrapolato in messages stampa solo -->
+                                    <!-- quello con key: message  -->
+
+                                    {{ oggetto.message }} 
+
                                 </div>
                                 <div class="timeText">
                                     12:00
                                 </div>
                             </div>
 
-                        </div>
-
-                        <!-- Classe messaggi ricevuti  -->
-
-                        <div class="messages receive">
-
-                            <div class="testoEorario">
-
-                                <!-- Testo messaggi  -->
-                                <div class="textFormat">
-
-                                    {{ this.activeIndex.messages }}
-
-                                </div>
-                                
-                                <!-- Orario messaggi  -->
-                                <div class="timeText">
-                                    12:00
-                                </div>
-
-                            </div>
-                           
                         </div>
 
                     </div>

@@ -7,7 +7,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            activeIndex: 0,
+            activeIndex: '',
             sofia : {
                 name: 'Sofia',
                 avatar: 'img/avatar_io.jpg',
@@ -180,13 +180,17 @@ createApp({
         }
     },
     methods: {
+        
         changeIndex: function(index) {
 
             console.log('hai cliccato la scheda di', this.contacts[index].name)
             this.activeIndex = this.contacts[index]
             console.log('Indice Attivo', this.activeIndex)
 
-
         },
-     },
+     }, mounted(){
+
+        this.activeIndex = this.contacts[0];
+        }
+
 }).mount('#app');
