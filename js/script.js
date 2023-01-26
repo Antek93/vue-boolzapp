@@ -189,9 +189,27 @@ createApp({
             console.log('Indice Attivo', this.activeIndex)
 
         },
-        addText: function() {
+        addText: function(index) {
         
-        console.log('Input text:', this.inputText)    
+        console.log('Input text:', this.inputText);
+
+        this.activeIndex.messages.push({
+            date: '26/01/2020',
+            message: this.inputText,
+            status: 'sent'
+        });
+
+        this.inputText = '',
+
+        setTimeout(() => {
+
+            this.activeIndex.messages.push({
+                date: '26/01/2020',
+                message: 'Ok',
+                status: 'receive'
+            });
+
+        }, 3000);
 
         }
      }, mounted(){

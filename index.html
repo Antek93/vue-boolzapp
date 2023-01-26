@@ -259,7 +259,7 @@
                         <div class="textBox">
                             <div class="barraDue ms-1">
                                 <form class="barraDue" action="#" @event.preventDefault()>
-                                    <input @keyup.enter="addText()" v-model="inputText" class="navigatorDue" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Scrivi un messaggio">
+                                    <input @keyup.enter="addText(index)" v-model="inputText" class="navigatorDue" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Scrivi un messaggio">
                                 </form>
                             </div>
                         </div>
