@@ -414,3 +414,7 @@
     font-size: 11px;
     padding-left: 10px;
 }
+
+.displayOff {
+    display: none;
+}
