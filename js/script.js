@@ -7,6 +7,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            dt: null,
+            hour: '',
             searchedStuff: '',
             inputText: '',
             activeIndex: '',
@@ -212,10 +214,29 @@ createApp({
 
         this.inputText = '';
 
-        }
-     }, mounted(){
+        },
+        changeDisplay () {
+            
+            // console.log(this.contacts.name)
 
+            // if (this.contacts.name.includes(this.searchedStuff)) {
+
+
+            // } else {
+                
+            //    return this.activeIndex.visible = false;
+
+
+            // }
+
+            
+        },
+
+     }, mounted(){
         this.activeIndex = this.contacts[0];
+        this.dt = luxon.DateTime;
+        // console.log(dt.now().toLocalString(this.dt.DATETIME_SHORT_WITH_SECONDS))
+
         }
 
 }).mount('#app');
