@@ -214,27 +214,21 @@ createApp({
         this.inputText = '';
 
         },
-        changeDisplay(index) {
-            
-            for(let i = 0; i < this.contacts.length; i++) {
+        // changeDisplay(index) {
 
-                if ((this.contacts[i]['name'].toLowerCase().includes(this.searchedStuff.toLowerCase))) {
-               
-                this.contacts[i].visible = true;
-                console.log('includo')
-              
-            }   else {
+        //     if (this.searchedStuff.includes(this.contacts.name)) {
 
-                this.contacts[i].visible = false;
-                console.log('non-includo')
-                console.log('this.searchedStuff', this.searchedStuff)
-                console.log('this.contacts', this.contacts[i]['name'])
+        //         this.contacts.visible = true;
+        //         console.log('includo',)
+        //         return
 
-            }
-            }
-            
+        //     } else {
+        //         this.contacts.visible = false;
+        //         console.log('non-includo')
 
-        },
+        //     }
+
+        // },
 
      }, mounted(){
         this.activeIndex = this.contacts[0];
