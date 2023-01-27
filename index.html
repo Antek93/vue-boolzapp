@@ -166,7 +166,7 @@
                                         <!-- Orario  -->
                                         <div class="hour">
                                             <div>
-                                                {{ contacts[index].messages[contacts[index].messages.length - 1].date }}
+                                                {{ contacts[index].messages[contacts[index].messages.length - 1].date.slice(11,16) }}
                                             </div>
                                         </div>
                                     </div>
@@ -262,7 +262,7 @@
 
                                 </div>
                                 <div class="timeText">
-                                    {{ oggetto.date }}
+                                    {{ oggetto.date.slice(11,16) }}
                                 </div>
                             </div>
 

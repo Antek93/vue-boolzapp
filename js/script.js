@@ -196,7 +196,7 @@ createApp({
         console.log('Input text:', this.inputText);
 
         this.activeIndex.messages.push({
-            date: '12:22',
+            date: '10/01/2020 15:50:00',
             message: this.inputText,
             status: 'sent'
         });
@@ -204,7 +204,7 @@ createApp({
         setTimeout(() => {
 
             this.activeIndex.messages.push({
-                date: '12:23',
+                date: '10/01/2020 15:50:00',
                 message: 'Ok',
                 status: 'receive'
             });
