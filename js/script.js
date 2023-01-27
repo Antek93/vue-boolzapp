@@ -7,8 +7,6 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            dt: null,
-            hour: '',
             searchedStuff: '',
             inputText: '',
             activeIndex: '',
