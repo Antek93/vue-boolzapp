@@ -110,32 +110,36 @@
 
                             <!-- input tag 1 -->
                             <div class="nav barra ms-1">
-<<<<<<< HEAD
+
                                 <!-- <form class="barra" action="#"> -->
                                     <input @keyup.enter="changeDisplay(index)" v-model="searchedStuff" class="navigator" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Cerca o inizia una nuova chat">
                                     <!-- </form> -->
                                 </div>
-=======
+
+
                                 <form class="barra" action="#">
                                     <input class="navigator" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Cerca o inizia una nuova chat">
                                 </form>
                             </div>
                               
->>>>>>> parent of 4f2ddd0 (aggiunte classi on e off)
+
                         </div>
                         
                         <!-- Utenti -->
                         <div class="messageBox">
                             <ol>
                                 <!-- Ciclo for per creare tante chat quanto gli elementi nell'array contatti -->
-<<<<<<< HEAD
+
                                 <li v-for="(element, index) in contacts"
                                 class="chatUtente"
                                 :class="(contacts[index].visible == true) ? 'displayOn' : 'displayOff'">
                                 
-=======
+
                                 <li v-for="(element, index) in contacts" class="chatUtente">
->>>>>>> parent of 4f2ddd0 (aggiunte classi on e off)
+
+
+                                <li v-for="(element, index) in contacts" class="chatUtente">
+
 
                                     <!-- Scheda chat -->
                                     <div @click="changeIndex(index, message)" class="chatFriend">

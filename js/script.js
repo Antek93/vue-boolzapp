@@ -7,7 +7,6 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            searchedStuff: '',
             inputText: '',
             activeIndex: '',
             sofia : {
