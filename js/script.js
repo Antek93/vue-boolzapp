@@ -7,6 +7,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            DateTime: null,
+            searchedStuff: '',
             inputText: '',
             activeIndex: '',
             sofia : {
@@ -194,7 +196,7 @@ createApp({
         console.log('Input text:', this.inputText);
 
         this.activeIndex.messages.push({
-            date: '26/01/2020',
+            date: '12:22',
             message: this.inputText,
             status: 'sent'
         });
@@ -202,7 +204,7 @@ createApp({
         setTimeout(() => {
 
             this.activeIndex.messages.push({
-                date: '26/01/2020',
+                date: '12:23',
                 message: 'Ok',
                 status: 'receive'
             });
@@ -212,26 +214,24 @@ createApp({
         this.inputText = '';
 
         },
-        changeDisplay () {
-            
-            // console.log(this.contacts.name)
+        // changeDisplay(index) {
 
-            // if (this.contacts.name.includes(this.searchedStuff)) {
+        //     if (this.searchedStuff.includes(this.contacts.name)) {
 
+        //         this.contacts.visible = true;
+        //         console.log('includo',)
+        //         return
 
-            // } else {
-                
-            //    return this.activeIndex.visible = false;
+        //     } else {
+        //         this.contacts.visible = false;
+        //         console.log('non-includo')
 
+        //     }
 
-            // }
-
-            
-        },
+        // },
 
      }, mounted(){
         this.activeIndex = this.contacts[0];
-        this.dt = luxon.DateTime;
         // console.log(dt.now().toLocalString(this.dt.DATETIME_SHORT_WITH_SECONDS))
 
         }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Vue Boolzapp</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.2.1/luxon.min.js"></link>
+
 
 </head>
+
 <body>
 
     <div id="app">
@@ -28,14 +30,14 @@
                     <!-- Sezione user -->
                     <div class="user">
 
-                         <!-- Sofia da prendere con i dati -->
+                        <!-- Sofia da prendere con i dati -->
                         <div class="meBox">
-                           <div class="profilePic">
+                            <div class="profilePic">
                                 <img :src="sofia.avatar" alt="">
-                           </div>
-                           <div class="myName">
-                             {{ sofia.name }}
-                           </div>
+                            </div>
+                            <div class="myName">
+                                {{ sofia.name }}
+                            </div>
                         </div>
 
                         <!-- Sezione icone  -->
@@ -43,24 +45,31 @@
 
                             <!-- Reload icon  -->
                             <div class="ps-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-clockwise cursor" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
-                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-arrow-clockwise cursor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                    <path
+                                        d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
                                 </svg>
                             </div>
-                
+
 
                             <!-- Message icon -->
                             <div class="ps-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chat-right-fill cursor" viewBox="0 0 16 16">
-                                    <path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-chat-right-fill cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
                                 </svg>
                             </div>
-                        
+
                             <!-- Three dots icon  -->
-                            <div class="ps-4 pe-2" >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-three-dots-vertical cursor" viewBox="0 0 16 16">
-                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            <div class="ps-4 pe-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-three-dots-vertical cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                                 </svg>
                             </div>
 
@@ -74,9 +83,11 @@
                         <div class="bell">
                             <!-- campanella -->
                             <div class="bellStyle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-bell-slash-fill cursor" viewBox="0 0 16 16">
-                                    <path d="M5.164 14H15c-1.5-1-2-5.902-2-7 0-.264-.02-.523-.06-.776L5.164 14zm6.288-10.617A4.988 4.988 0 0 0 8.995 2.1a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 7c0 .898-.335 4.342-1.278 6.113l9.73-9.73zM10 15a2 2 0 1 1-4 0h4zm-9.375.625a.53.53 0 0 0 .75.75l14.75-14.75a.53.53 0 0 0-.75-.75L.625 15.625z"/>
-                                </svg> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor"
+                                    class="bi bi-bell-slash-fill cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.164 14H15c-1.5-1-2-5.902-2-7 0-.264-.02-.523-.06-.776L5.164 14zm6.288-10.617A4.988 4.988 0 0 0 8.995 2.1a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 7c0 .898-.335 4.342-1.278 6.113l9.73-9.73zM10 15a2 2 0 1 1-4 0h4zm-9.375.625a.53.53 0 0 0 .75.75l14.75-14.75a.53.53 0 0 0-.75-.75L.625 15.625z" />
+                                </svg>
                             </div>
                         </div>
 
@@ -102,28 +113,30 @@
                             <!-- Lente d'ingradimento da Boostrap -->
                             <div class="nav lente">
                                 <button class="lens">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search cursor" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-search cursor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                     </svg>
                                 </button>
                             </div>
 
                             <!-- input tag 1 -->
                             <div class="nav barra ms-1">
-                                <form class="barra" action="#">
-                                    <input v-model="searchedStuff" class="navigator" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Cerca o inizia una nuova chat">
-                                    </form>
-                                </div>
+                                <form class="barra" action="#" @submit.prevent>
+                                    <input @keyup="changeDisplay()" v-model="searchedStuff" class="navigator" type="text"
+                                        name="nuovaChat" id="nuovaChat" placeholder="Cerca o inizia una nuova chat">
+                                </form>
+                            </div>
                         </div>
-                        
+
                         <!-- Utenti -->
                         <div class="messageBox">
                             <ol>
                                 <!-- Ciclo for per creare tante chat quanto gli elementi nell'array contatti -->
-                                <li v-for="(element, index) in contacts"
-                    class="chatUtente"
-                                :class="(contacts.visible = 'false') ? 'displayOn' : 'displayOff'">
-                                
+                                <li v-for="(element, index) in contacts" class="chatUtente"
+                                :class="(contacts[index].visible == true) ? 'displayOn' : 'displayOff'">
+
 
                                     <!-- Scheda chat -->
                                     <div @click="changeIndex(index, message)" class="chatFriend">
@@ -140,12 +153,13 @@
 
                                             <!-- Nome amico  -->
                                             <div class="nameFriend">
-                                                 {{ contacts[index].name }}
+                                                {{ contacts[index].name }}
                                             </div>
 
                                             <!-- Ultimo messaggio trasmesso -->
                                             <div class="lastMessagePreview">
-                                                {{ contacts[index].messages[contacts[index].messages.length - 1].message }}
+                                                {{ contacts[index].messages[contacts[index].messages.length - 1].message
+                                                }}
                                             </div>
                                         </div>
 
@@ -162,7 +176,7 @@
                     </div>
                 </div>
                 <!-- Messages -->
-                <div class="rightBox" >
+                <div class="rightBox">
 
                     <!-- Sezione amico con cui sto chattando -->
                     <div class="friendUser">
@@ -181,7 +195,7 @@
                             <div class="ms-3">
 
                                 <div class="nameFriend">
-                                    {{ activeIndex.name }} 
+                                    {{ activeIndex.name }}
                                 </div>
                                 <div class="lastAccess">
                                     <span>Ultimo accesso alle</span>
@@ -190,29 +204,35 @@
                             </div>
 
                         </div>
-                        
+
                         <!-- Icone su utente attivo -->
                         <div class="tools">
 
                             <!-- Search icon  -->
                             <div class="ps-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search cursor" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-search cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
                             </div>
 
                             <!-- clipboard icon -->
                             <div class="ps-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-paperclip cursor" viewBox="0 0 16 16">
-                                    <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-paperclip cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z" />
+                                </svg>
                             </div>
 
                             <!-- three dots icon  -->
                             <div class="ps-4 pe-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots-vertical cursor" viewBox="0 0 16 16">
-                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-three-dots-vertical cursor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
                             </div>
                         </div>
 
@@ -229,9 +249,8 @@
                         <!-- Aggiungi la classe messages a tutti gli elementi che verrano creati -->
                         <!-- Aggiungi la classe sent se lo status è sent, altrimenti aggiungi la classe received -->
 
-                        <div v-for="(oggetto, index) in activeIndex.messages"
-                        class="messages" 
-                        :class="(oggetto.status=='sent') ? 'sent' : 'receive'">
+                        <div v-for="(oggetto, index) in activeIndex.messages" class="messages"
+                            :class="(oggetto.status=='sent') ? 'sent' : 'receive'">
 
                             <div class="testoEorario">
                                 <div class="textFormat">
@@ -239,7 +258,7 @@
                                     <!-- Dell'oggetto estrapolato in messages stampa solo -->
                                     <!-- quello con key: message  -->
 
-                                    {{ oggetto.message }} 
+                                    {{ oggetto.message }}
 
                                 </div>
                                 <div class="timeText">
@@ -254,40 +273,48 @@
 
                         <!-- Emoticons -->
                         <div class="emoji">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile cursor" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-emoji-smile cursor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+                            </svg>
                         </div>
 
                         <!-- Input text  -->
                         <div class="textBox">
                             <div class="barraDue ms-1">
-                                <!-- <form name="nuovaChat" class="barraDue" action="" @event.preventDefault()> -->
-                                    <input @keyup.enter="addText(index)" v-model="inputText" class="navigatorDue" type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat" placeholder="Scrivi un messaggio">
-                                <!-- </form> -->
+                                <form name="nuovaChat" class="barraDue" action="" @submit.prevent>
+                                <input @keyup.enter="addText(index)" v-model="inputText" class="navigatorDue"
+                                    type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat"
+                                    placeholder="Scrivi un messaggio">
+                                </form>
                             </div>
                         </div>
 
                         <!-- Microphone -->
                         <div class="microphone">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mic-fill cursor" viewBox="0 0 16 16">
-                                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-mic-fill cursor" viewBox="0 0 16 16">
+                                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                                <path
+                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-            
+
             </main>
 
             <!-- Background cover gray -->
             <footer></footer>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="js/contacts.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
