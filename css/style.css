@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Attributi per cursor pointer sui bottoni  */
 
-.cursor {
-    cursor: pointer;
-}
 /* Contenitore principale */
 
 #setContainer {
@@ -43,11 +39,10 @@
     transform: translate(-50%,-50%);
     background-color: white;
     display: flex;
-    
 
 }
 
-/* Contacts and Messages container */
+/* Divisione Core in due blocchi SX e DX*/
 
 .leftBox {
     width: 35%;
@@ -62,9 +57,9 @@
 
 }
 
-/* Attributi per sezione contatti - colonna sinistra */
+/* Attributi blocco SX  */
 
-.user {
+.leftBox .user {
     width: 100%;
     height: 10%;
     background-color:rgb(206, 204, 203);
@@ -72,7 +67,7 @@
     border: 0px;
 }
 
-.alerts {
+.leftBox .alerts {
     width: 100%;
     height: 10%;
     background-color: #8edafc;
@@ -80,36 +75,116 @@
     display: flex;
 }
 
-.contacts {
+.leftBox .contacts {
     width: 100%;
     height: 80%;
     background-color: #f8f8f8;
 }
 
-/* Attributi dentro contacts */
+/* Attributi per figli di USER */
 
-.nav-container {
+.leftBox .user .meBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profilePic {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    
+}
+
+.leftBox .user .meBox .myName {
+    margin-left: 15px;
+}
+
+.leftBox .user .meBox .profilePic > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.leftBox .user .myIcons {
+    width: 50%;
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Attributi per figli di ALERTS */
+
+/* Alerts menu  */
+
+.leftBox .alerts .bell {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.leftBox .alerts .bell .bellStyle {
+    width: 50px;
+    height: 50px;
+    color: #8edafc;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bellStyle > svg {
+    transform: translate(10px, 10px);
+}
+
+.leftBox .alerts .sideBell {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.leftBox .alerts .sideBell .bellTitle {
+    font-size: 13px;
+    font-weight:700;
+    cursor: pointer;
+   
+}
+
+.leftBox .alerts .sideBell .bellSubtitle {
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Attributi per figli di CONTACTS  */
+
+.leftBox .contacts .nav-container {
     display: flex;
     background-color: rgb(206, 204, 203);
     display: flex;
     justify-content: flex-start;
 }
 
-/* Attributi dentro nav-container  */
 
-.lente {
+.leftBox .contacts .nav-container .lente {
     width: 20%;
     justify-content: center;
 }
 
-.barra {
+.leftBox .contacts .nav-container .barra {
     width: 77%;
     justify-content: flex-start;
     border: 0px;
     
 } 
 
-.nav {
+.leftBox .contacts .nav-container .nav {
     display: flex;
     align-items: center;
     border: 0.5px solid white;
@@ -119,7 +194,7 @@
 
 }
 
-.navigator {
+.leftBox .contacts .nav-container .nav .navigator {
     width: 90%;
     height: 40px;
     border: none;
@@ -137,7 +212,7 @@
 
 /* Attributi per chat utenti */
 
-.messageBox {
+.contacts .messageBox {
     margin: 0 auto;
     width: 100%;
     height: 89%;
@@ -145,12 +220,12 @@
     background-color: rgb(206, 204, 203);
 }
 
-.messageBox > ol {
+.contacts .messageBox > ol {
     list-style: none;
     padding: 0px;
 }
 
-.messageBox > ol > li {
+.contacts .messageBox > ol > li {
     text-decoration: none;
 }
 
@@ -161,103 +236,23 @@
     border: 1px solid rgb(206, 204, 203);
 }
 
-/* Attributi per sezione user del left box  */
 
-/* Box di Sofia  */
+/* Attributi per messageBOX */
 
-.meBox {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.profilePic {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    
-}
-
-.myName {
-    margin-left: 15px;
-}
-
-.profilePic img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-}
-
-.myIcons {
-    width: 50%;
-    font-size: 30px;
-    color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-/* Alerts menu  */
-
-.bell {
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.sideBell {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 10px;
-}
-
-.bellStyle {
-    width: 50px;
-    height: 50px;
-    color: #8edafc;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.bellStyle > svg {
-    transform: translate(10px, 10px);
-}
-
-.bellTitle {
-    font-size: 13px;
-    font-weight:700;
-    cursor: pointer;
-   
-}
-
-.bellSubtitle {
-    font-size: 10px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Lista messaggi chat */
-
-.chatFriend {
+.messageBox ol .chatUtente .chatFriend {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.iconFriend {
+.messageBox ol .chatUtente .chatFriend .iconFriend {
     width: 18%;
     display: flex;
     justify-content: center;
 }
 
-.profilePic {
+.messageBox ol .chatUtente .chatFriend .iconFriend .profilePic {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -270,20 +265,20 @@
     border-radius: 50%;
 }
 
-.infoFriend {
+.messageBox ol .chatUtente .chatFriend .infoFriend {
     width: 70%;
 }
 
-.nameFriend {
+.infoFriend .nameFriend {
     font-size: 15px;
 }
 
-.lastMessagePreview, .lastAccess {
+.infoFriend .lastMessagePreview, .lastAccess {
     font-size: 10px;
 }
 
 
-.hour {
+.messageBox ol .chatUtente .chatFriend .hour {
     width: 12%;
     height: 100%;
     display: flex;
@@ -292,9 +287,9 @@
     margin-top: 10px;
 }
 
-/* Attributi per il box di destra - chat messaggi */
+/* Attributi per il box di DX */
 
-.friendUser {
+.rightBox .friendUser {
     width: 100%;
     height: 10%;
     background-color:  rgb(206, 204, 203);
@@ -302,7 +297,7 @@
     display: flex;
 }
 
-.display {
+.rightBox .display {
     width: 100%;
     height: 80%;
     overflow: auto;
@@ -311,48 +306,7 @@
 
 }
 
-/* Attributi messages */
-
-.messages {
-    min-height: 10%;
-    min-width: 30%;
-    max-width: 50%;
-    display: flex;
-    border-radius: 8px;
-    padding: 6px 3px 6px 9px;
-    margin: 8px 15px;
-    position: relative;
-}
-
-.sent {
-    background-color: #d5f9ba;
-    align-self: flex-end;
-}
-
-.receive {
-    background-color: #fdfdfd;
-    align-self: flex-start;
-}
-
-.testoEorario {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.textFormat {
-    width: 85%
-}
-
-.timeText {
-    width: 10%;
-    position: absolute;
-    bottom: 1px;
-    right: 8px;
-    font-size: 10px;
-}
-
-.sendMenu {
+.rightBox .sendMenu {
     width: 100%;
     height: 10%;
     background-color: rgb(206, 204, 203);
@@ -363,7 +317,7 @@
 
 /* Attributi per friendUser  */
 
-.activeFriend {
+.rightBox .friendUser .activeFriend {
     width: 50%;
     display: flex;
     justify-content: flex-start;
@@ -371,7 +325,7 @@
 
 }
 
-.tools {
+.rightBox .friendUser .tools {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -380,34 +334,77 @@
     
 }
 
+/* Attributi display  */
+
+.rightBox .display .messages {
+    min-height: 10%;
+    min-width: 30%;
+    max-width: 50%;
+    display: flex;
+    border-radius: 8px;
+    padding: 6px 3px 6px 9px;
+    margin: 8px 15px;
+    position: relative;
+}
+
+.rightBox .display .sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+.rightBox .display .receive {
+    background-color: #fdfdfd;
+    align-self: flex-start;
+}
+
+.rightBox .display .messages .testoEorario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.rightBox .display .messages .testoEorario .textFormat {
+    width: 85%
+}
+
+.rightBox .display .messages .testoEorario .timeText {
+    width: 10%;
+    position: absolute;
+    bottom: 1px;
+    right: 8px;
+    font-size: 10px;
+}
+
 /* Attributi per sendMenu */
 
-.emoji {
+.rightBox .sendMenu .emoji {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.textBox {
+.rightBox .sendMenu .textBox {
     width: 75%;
     display: flex;
     color: gray;
     justify-content: center;
 }
 
-.microphone {
+.rightBox .sendMenu .microphone {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.barraDue {
+/* Attributi in sendMenu textBox */
+
+.sendMenu .textBox .barraDue {
     width: 100%;
     justify-content: flex-start;
     border: 0px;  
 } 
 
-.navigatorDue {
+.sendMenu .textBox .barraDue form .navigatorDue {
     width: 100%;
     height: 40px;
     border: none;
@@ -415,6 +412,14 @@
     padding-left: 10px;
 }
 
+/* Attributi prt interattività JS */
+
 .displayOff {
     display: none;
+}
+
+/* Attributi per cursor pointer sui bottoni  */
+
+.cursor {
+    cursor: pointer;
 }

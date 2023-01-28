@@ -24,7 +24,7 @@
             <!-- Core della web application -->
             <main>
 
-                <!-- Contacts -->
+                <!-- Sezione di sinistra: profilo Sofia, notifiche, searchbar e chats  -->
                 <div class="leftBox">
 
                     <!-- Sezione user -->
@@ -248,7 +248,7 @@
                         <!-- Aggiungi la classe sent se lo status è sent, altrimenti aggiungi la classe received -->
 
                         <div v-for="(oggetto, index) in activeIndex.messages" class="messages"
-                            :class="(oggetto.status=='sent') ? 'sent' : 'receive'">
+                        :class="(oggetto.status=='sent') ? 'sent' : 'receive'">
 
                             <div class="testoEorario">
                                 <div class="textFormat">
@@ -282,7 +282,7 @@
                         <!-- Input text  -->
                         <div class="textBox">
                             <div class="barraDue ms-1">
-                                <form name="nuovaChat" class="barraDue" action="" @submit.prevent>
+                                <form name="nuovaChat" action="" @submit.prevent>
                                 <input @keyup.enter="addText(index)" v-model="inputText" class="navigatorDue"
                                     type="text" onfocus="this.value=''" name="nuovaChat" id="nuovaChat"
                                     placeholder="Scrivi un messaggio">
